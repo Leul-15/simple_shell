@@ -1,6 +1,5 @@
 #include "shell.h"
 
-
 /**
  * _strcmp - Compare two strings.
  * @s1: The first string.
@@ -14,9 +13,7 @@ int _strcmp(const char *s1, const char *s2)
 	while (*s1)
 	{
 		if (*s1 != *s2)
-		{
 			break;
-		}
 		s1++;
 		s2++;
 	}
@@ -36,9 +33,7 @@ char *_strchr(const char *str, char c)
 	while (*str != (char)c)
 	{
 		if (!*str++)
-		{
 			return (NULL);
-		}
 	}
 	return ((char *)str);
 }

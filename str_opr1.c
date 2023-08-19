@@ -44,9 +44,7 @@ char *_strncpy(char *dest, const char *src, size_t n)
 	char *ptr = dest;
 
 	if (!ptr)
-	{
 		return (NULL);
-	}
 
 	while (*src && n--)
 	{
