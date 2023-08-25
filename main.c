@@ -12,5 +12,7 @@ int main(int __attribute__((unused)) ac, char **av)
 	char *name = av[0];
 
 	shloop(&shell, name);
+	if (_strcmp(shell.argv[0], "exit") == 0)
+		return (-2);
 	return (EXIT_SUCCESS);
 }
